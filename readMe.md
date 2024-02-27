@@ -1,0 +1,1 @@
+  background-image: url('background.png'); /* Replace 'background.jpg' with the path to your background image */
