@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <div id="background-overlay"></div>
+    <div id="mainMenu">
+        <h1>Nyan Cat Game</h1>
+        <button id="startButton">Start Game</button>
+        <button id="highScoresButton">High Scores</button>
+        <button id="instructionsButton">Instructions</button>
+    </div>
+    <div id="gameContainer" style="display: none;">
         <canvas id="gameCanvas"></canvas>
     </div>
-    <div id="controls">
-        <button id="pauseButton">Pause</button>
-        <button id="resumeButton" style="display:none;">Resume</button>
+    <div id="instructions" style="display: none;">
+        <h2>Instructions</h2>
+        <p>Press space to jump. Avoid the pipes!</p>
+        <button id="backButton">Back</button>
+    </div>
+    <div id="highScores" style="display: none;">
+        <h2>High Scores</h2>
+        <ul id="highScoresList"></ul>
+        <button id="backButtonHighScores">Back</button>
     </div>
     <script src="script.js"></script>
 </body>
